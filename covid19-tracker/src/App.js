@@ -5,7 +5,7 @@ import Global from "./KomponenHalaman/Global";
 import Indo from "./KomponenHalaman/Indo";
 import Provinsi from "./KomponenHalaman/Provinsi";
 
-const App = (props) => {
+const App = () => {
   return (
     <div className="App">
         <h1>Covid Tracker</h1>
@@ -27,7 +27,7 @@ const App = (props) => {
           <Switch>
             <Route path="/global">
             <Global />
-            </Route>
+            </Route> 
             <Route path="/indonesia">
             <Indo />
             </Route>
