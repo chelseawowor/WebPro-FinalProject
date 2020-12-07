@@ -26,9 +26,9 @@ const Provinsi = ({provinsi, posotif, sembuh, meninggal}) => {
                   return(
                       <tr>
                           <th className="kolom">{item.provinsi}</th>
-                          <th className="kolom"><NumberFormat value={item.kasusPosi} displayType={'text'} thousandSeparator={true} /></th>
-                          <th className="kolom"><NumberFormat value={item.kasusSemb} displayType={'text'} thousandSeparator={true}/></th>
-                          <th className="kolom"><NumberFormat value={item.kasusMeni} displayType={'text'} thousandSeparator={true}/></th>
+                          <th className="kolom1"><NumberFormat value={item.kasusPosi} displayType={'text'} thousandSeparator={true} /></th>
+                          <th className="kolom2"><NumberFormat value={item.kasusSemb} displayType={'text'} thousandSeparator={true}/></th>
+                          <th className="kolom3"><NumberFormat value={item.kasusMeni} displayType={'text'} thousandSeparator={true}/></th>
                        </tr>
                   )
         })}

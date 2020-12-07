@@ -2,9 +2,8 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import Card from './Card';
 import '../App.css';
-import NumberFormat from 'react-number-format';
 
-const Indo = ({name, value}) => {
+const Indo = ({nama, nilai}) => {
     const [confirmed, setConfirmed] = useState([]);
     const [recovered, setRecovered] = useState([]);
     const [deaths, setDeaths] = useState([]);
@@ -26,17 +25,17 @@ const Indo = ({name, value}) => {
         <div>
             <h2>Data jumlah kasus di Indonesia
                 <div className="card1">
-                <Card className="card-kasus"
-                    name="Positif"
-                    value={confirmed}
+                <Card 
+                    nama="Positif"
+                    nilai={confirmed}
                 />
-                <Card className="card-sembuh"
-                    name="Sembuh"
-                    value={recovered}
+                <Card 
+                    nama="Sembuh"
+                    nilai={recovered}
                 />
-                <Card className="card-meninggal"
-                    name="Meninggal"
-                    value={deaths}
+                <Card 
+                    nama="Meninggal"
+                    nilai={deaths}
                 />
                 </div>
             </h2>

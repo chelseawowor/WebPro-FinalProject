@@ -6,16 +6,44 @@
   border-color: #000000;
   border-style: double;
   margin: 5px;
+  background: #b961ec;
 }
 .table {
   text-align: center;
   border: #000000;
   border-style: solid;
   padding: 2px;
+  background: #b961ec;
 }
 .kolom {
   text-align: center;
-  border: #5e5b5d;
+  border: #ffffff;
   border-style: solid;
   padding: 2px;
+  background: #ee9999;
+}
+.kolom1 {
+  text-align: center;
+  border: #ffffff;
+  border-style: solid;
+  padding: 2px;
+  background: #e46f4b;
+}
+.kolom2 {
+  text-align: center;
+  border: #ffffff;
+  border-style: solid;
+  padding: 2px;
+  background: #71f3e8;
+}
+.kolom3 {
+  text-align: center;
+  border: #ffffff;
+  border-style: solid;
+  padding: 2px;
+  background: #8f8888;
+}
+
+.card {
+
 }

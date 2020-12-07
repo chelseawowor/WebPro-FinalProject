@@ -3,7 +3,7 @@ import axios from 'axios';
 import Card from './Card';
 import '../App.css';
 
-const Global = ({name, value}) => {
+const Global = ({nama, nilai}) => {
     const [confirmed, setConfirmed] = useState([]);
     const [recovered, setRecovered] = useState([]);
     const [deaths, setDeaths] = useState([]);
@@ -25,17 +25,17 @@ const Global = ({name, value}) => {
         <div>
             <h2>Data jumlah kasus secara Global
                 <div className="card1">
-                <Card 
-                    name="Positif"
-                    value={confirmed.value}
+                <Card
+                    nama="Positif"
+                    nilai={confirmed.value}
                 />
                 <Card 
-                    name="Sembuh"
-                    value={recovered.value}
+                    nama="Sembuh"
+                    nilai={recovered.value}
                 />
                 <Card 
-                    name="Meninggal"
-                    value={deaths.value}
+                    nama="Meninggal"
+                    nilai={deaths.value}
                 />
                 </div>
             </h2>

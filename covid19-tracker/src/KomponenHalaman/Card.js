@@ -1,12 +1,13 @@
 import React from 'react';
-import '../App.css';
+import '../App.css'; 
 import NumberFormat from 'react-number-format';
 
-const Card = ({name, value}) =>{
+//card for component global & indonesia
+const Card = ({nama, nilai}) =>{
     return (
         <div className="card-container">
-            <p>{name}</p>
-            <NumberFormat value={value} displayType={'text'} thousandSeparator={true}/>
+            <p>{nama}</p>
+            <p>{nilai}</p>    
         </div>
     )
 }
