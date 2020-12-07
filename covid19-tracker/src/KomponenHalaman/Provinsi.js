@@ -16,19 +16,19 @@ const Provinsi = ({provinsi, posotif, sembuh, meninggal}) => {
     return (
         <div>
             <h2>Data jumlah kasus di Indonesia</h2>
-            <tr className="table">
-                <th>Provinsi</th>
-                <th>Jumlah Kasus</th>
-                <th>Sembuh</th>
-                <th>Meninggal</th>
+            <tr >
+                <th className="table">Provinsi</th>
+                <th className="table">Jumlah Kasus</th>
+                <th className="table">Sembuh</th>
+                <th className="table">Meninggal</th>
             </tr>
             {data.map((item) => {
                   return(
-                      <tr className="table">
+                      <tr>
                           <th className="kolom">{item.provinsi}</th>
-                          <th className="kolom"><NumberFormat value={item.kasusPosi} /></th>
-                          <th className="kolom"><NumberFormat value={item.kasusSemb} /></th>
-                          <th className="kolom"><NumberFormat value={item.kasusMeni} /></th>
+                          <th className="kolom"><NumberFormat value={item.kasusPosi} displayType={'text'} thousandSeparator={true} /></th>
+                          <th className="kolom"><NumberFormat value={item.kasusSemb} displayType={'text'} thousandSeparator={true}/></th>
+                          <th className="kolom"><NumberFormat value={item.kasusMeni} displayType={'text'} thousandSeparator={true}/></th>
                        </tr>
                   )
         })}
