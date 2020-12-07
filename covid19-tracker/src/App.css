@@ -7,3 +7,11 @@
   border-style: double;
   margin: 5px;
 }
+.table {
+  text-align: center;
+  border: #000000;
+  border-style: solid;
+}
+.kolom {
+  text-align: center;
+}
