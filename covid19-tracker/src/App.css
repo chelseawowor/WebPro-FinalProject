@@ -7,14 +7,3 @@
   border-style: double;
   margin: 5px;
 }
-.card-sembuh {
-  background: cornflowerblue;
-}
-
-.card-meninggal {
-  background: dimgrey;
-}
-
-.card-kasus {
-  background: rgb(224, 33, 33);
-}

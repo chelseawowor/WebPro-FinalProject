@@ -18,22 +18,22 @@ const Global = ({name, value}) => {
     }, []);
 
     console.log(confirmed);
-    console.log(recovered);
-    console.log(deaths);
+    // console.log(recovered);
+    // console.log(deaths);
     
     return (
         <div>
             <h2>Data jumlah kasus secara Global
                 <div className="card1">
-                <Card className="card-kasus"
-                    name="Jumlah Kasus"
+                <Card 
+                    name="Positif"
                     value={confirmed.value}
                 />
-                <Card className="card-sembuh"
+                <Card 
                     name="Sembuh"
                     value={recovered.value}
                 />
-                <Card className="card-meninggal"
+                <Card 
                     name="Meninggal"
                     value={deaths.value}
                 />
